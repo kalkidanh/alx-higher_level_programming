@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Class to define a square"""
+"""class Square to define a square"""
 
 
 
 class Square():
-    """Class with size and proper validation"""
+    """square class with size and proper validation"""
 
     def __init__(self, size=0):
         if (type(size) is not int):
