@@ -1,6 +1,6 @@
 #!/usr/bin/pythton3
 """
-Module for a class that prevents dynamic attribute creation""""
+Module for a class that prevents dynamic attribute creation
 
 """
 
