@@ -1,28 +1,30 @@
 #!/usr/bin/python3
-
-"""Defines a rectangle class."""
+"""
+Defines a rectangle class
+"""
 
 
 class Rectangle:
-    """Represent a rectangle."""
+    """Representation of a rectangle class"""
 
     def __init__(self, width=0, height=0):
-        """Initialze a new rectangle.
+        """Initialze a new rectangle
 
         Args:
-            width (int): The width of the new rectangle.
-            heignt (int): The heignt of the new rectangle.
+            width (int): The width of the new rectangle
+            heignt (int): The heignt of the new rectangle
         """
         self.width = width
         self.heignt = height
 
     @property
     def width(self):
-        """Get/set the width of the rectangle."""
+        """Get/set the width of the rectangle"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """Getter for the private attribute width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -36,6 +38,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
+        """Setter for the private attribute height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
