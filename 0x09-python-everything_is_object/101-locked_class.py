@@ -1,4 +1,4 @@
-#!/usr/bin/pythton3
+#!/usr/bin/python3
 """
 Module for a class that prevents dynamic attribute creation
 
@@ -6,7 +6,7 @@ Module for a class that prevents dynamic attribute creation
 
 
 class LockedClass():
-    """Class to prevent dynamic attributr creation"""
+    """Class to prevent dynamic attribute creation"""
     __slots__ = ['first_name']
 
     def __init__(self):
