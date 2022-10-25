@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""Define thr class Student."""
+"""Define the class Student."""
+
 
 class Student:
     """Represents a student."""
