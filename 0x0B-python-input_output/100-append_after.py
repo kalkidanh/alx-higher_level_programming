@@ -3,7 +3,7 @@
 """Defines an append to file function."""
 
 
-def append_after9filename="", search_string="", new_string=""):
+def append_after(filename="", search_string="", new_string=""):
     """Insert text after each line containing an given string
 
     Args:
