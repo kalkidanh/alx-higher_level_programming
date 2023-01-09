@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""function that adds 2 tuples"""
 def add_tuple(tuple_a=(), tuple_b=()):
     len_a = len(tuple_a)
     len_b = len(tuple_b)
