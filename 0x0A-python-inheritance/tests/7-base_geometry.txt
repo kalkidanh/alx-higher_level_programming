@@ -1,0 +1,48 @@
+import
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+for printing the area
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+  ...
+Exception: area() is not implemented
+
+for no-integer argument
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", "John")
+[TypeError] name must be an integer
+
+for boolean value
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", False)
+[TypeError] name must be an integer
+
+for list value
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", {1, 2})
+[TypeError] name must be an integer
+
+for negative value
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", -7)
+[ValueError] age must be greater than 0
+
+for zero as value
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 0)
+[ValueError] age must be greater than 0
+
+for no argument
+>>> bg = BaseGeometry()
+>>> bg.integer_validator()
+Traceback (most recent call last):
+  ...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+for more than two arguments
+>>> bg = BaseGeometry()
+>>> bg.integer_validator(1, 2, 3)
+Traceback (most recent call last):
+  ...
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
