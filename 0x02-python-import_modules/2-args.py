@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" prints the number of and the list of its arguments"""
 if __name__ == "__main__":
     import sys
     i = len(sys.argv) - 1

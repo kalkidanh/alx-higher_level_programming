@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * reverse - reverses the second half of the list
+ * reverse - reverse the second half of the list
  *
  * @h_r: head of second half
  * Return: nothing
