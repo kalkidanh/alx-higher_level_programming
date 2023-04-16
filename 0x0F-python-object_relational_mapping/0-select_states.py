@@ -4,11 +4,18 @@
 import MYSQLdb
 from sys import argv
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    """Gets all states from the db"""
+
     db = MYSQLdb.connect(host="localhost", port=3306,
-            user=argv[1], passwd=argv[2], db=argv[3])
+                         user=argv[1], passwd=argv[2], db=argv[3])
     c = db.cursor()
     c.execute("SELECT * \
             FROM states \
             ORDER BY states.id ASC")
-    [print(state) for state in c.fetchall()]
+
+    for state in c.fetchall():
+        print(state)
+
+    c.close()
+    db.close()
