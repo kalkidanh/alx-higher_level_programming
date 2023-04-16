@@ -22,6 +22,7 @@ if __name__ == '__main__':
 
     for state in c.fetchall():
         if state[1].startswith(N):
+            print(state)
 
     c.close()
     db.close()
