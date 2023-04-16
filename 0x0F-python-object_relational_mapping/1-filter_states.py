@@ -21,7 +21,7 @@ if __name__ == '__main__':
                 ORDER BY states.id ASC")
 
     for state in c.fetchall():
-        if state[1].startswith(N):
+        if state[1].startswith('N'):
             print(state)
 
     c.close()
