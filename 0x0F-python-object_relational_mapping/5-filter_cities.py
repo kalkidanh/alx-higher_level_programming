@@ -22,7 +22,7 @@ if __name__ == '__main__':
             WHERE states.name = %s \
             ORDER BY cities.id ASC", [argv[4]])
 
-    print(", ".join([state[0] for state on c.fetchall()]))
+    print(", ".join([state[0] for state in c.fetchall()]))
 
     c.close()
     db.close()
