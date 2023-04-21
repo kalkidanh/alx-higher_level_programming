@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that returns all cities from the DB"""
+"""Script that returns a list of all cities on the DB"""
 
 from sys import argv
 from model_state import Base, State
