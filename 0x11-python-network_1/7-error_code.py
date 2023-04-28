@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that sends a request to a URL and displays the body of the response."""
+"""Script that sends a request to a URL and displays the response."""
 
 from sys import argv
 import requests
