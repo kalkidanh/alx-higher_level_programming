@@ -3,8 +3,8 @@
 from urllib import request
 
 if __name__ == "__main__":
-    with request.urlopen("https://intranet.hbtn.io/status")as response:
-        page = response.read()
+    with request.urlopen("https://intranet.hbtn.io/status")as page:
+        page = page.read()
         print("Body response:")
         print("\t- type: {}".format(type(page)))
         print("\t- content: {}".format(page))
