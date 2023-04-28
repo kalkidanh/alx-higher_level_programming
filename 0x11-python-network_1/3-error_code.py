@@ -1,5 +1,5 @@
-#!/usr/bin/pythton3
-"""Script that takes a URL sends a rrequest and displays the body
+#!/usr/bin/python3
+"""Script that takes a URL sends a request and displays the body
 of the response"""
 
 from sys import argv
